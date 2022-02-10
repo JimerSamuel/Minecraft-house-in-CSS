@@ -5,7 +5,7 @@
   --gray-2: #dddddd;
   --gray-3: #cccccc;
   --gray-4: #bbbbbb;
-  --gray-5: #aaaaaa;
+  --gray-5: #a3a3a3;
   --white: #ffffff;
   --green: #cfffdc;
   --brown-1: #8f6b32;
@@ -15,13 +15,13 @@
   --blue-2: #77acf1;
 }
 
-/* Positions */
+/*  Positions */
 
 .absolute {
   position: absolute;
 }
 
-/* Main Structure*/
+/* Main Structure */
 
 * {
   transform-style: preserve-3d;
@@ -216,4 +216,36 @@ body {
   background: pink;
   background: var(--gray-4);
   transform: translateX(10vw) translateY(15vw) translateZ(25vw);
+}
+
+.roof-3 {
+  width: 30vw;
+  height: 10vw;
+  background: pink;
+  background: var(--gray-4);
+  transform: translateX(10vw) translateY(5vw) translateZ(15vw);
+}
+
+.roof-4 {
+  width: 3vw;
+  height: 10vw;
+  background: var(--gray-3);
+  transform-origin: bottom left;
+  transform: rotateY(-90deg) translateX(12vw) translateY(5vw) translateZ(-40vw);
+}
+
+.column-1 {
+  width: 15vw;
+  height: 2vw;
+  background: var(--brown-3);
+  transform-origin: bottom left;
+  transform: rotateY(-90deg) translateY(5vw) translateZ(-35vw);
+}
+
+.column-2 {
+  width: 2vw;
+  height: 15vw;
+  background: var(--brown-2);
+  transform-origin: bottom left;
+  transform: rotateX(-90deg) translateX(33vw) translateZ(-8vw);
 }
